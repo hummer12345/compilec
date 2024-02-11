@@ -1,0 +1,17 @@
+{
+    "name": "My Dev Container",
+    "build": {
+        "context": "..",
+        "dockerfile": "Dockerfile"
+    },
+    "settings": { 
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-vscode.cpptools"
+    ],
+    "forwardPorts": [],
+    "postCreateCommand": "echo 'Dev Container is ready!'",
+    "remoteUser": "root"
+}
