@@ -1,0 +1,17 @@
+online-judge-tools　ログイン
+oj login https://beta.atcoder.jp/
+
+atcoder-cli ログイン
+acc login
+
+コンテスト用のディレクトリ
+acc new abc101
+
+testcase のジャッジ
+oj t -c "./a.out" -d ./tests/
+
+権限付与
+chmod +x スクリプト名.sh
+
+提出
+acc submit main.cpp
