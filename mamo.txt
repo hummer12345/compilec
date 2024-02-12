@@ -15,3 +15,6 @@ chmod +x スクリプト名.sh
 
 提出
 acc submit main.cpp
+
+ターミナルショートかっと
+ctrl + j
