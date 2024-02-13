@@ -21,5 +21,6 @@ RUN pip3 install online-judge-tools
 # atcoder-cliのインストール
 RUN npm install -g atcoder-cli
 
-# ワークディレクトリの設定
-WORKDIR /usr/src/app
+COPY setup-aliases.sh /usr/local/bin/setup-aliases.sh
+RUN chmod +x /usr/local/bin/setup-aliases.sh
+
