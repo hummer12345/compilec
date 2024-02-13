@@ -12,6 +12,6 @@
         "ms-vscode.cpptools"
     ],
     "forwardPorts": [],
-    "postCreateCommand": "echo 'Dev Container is ready!'",
+    "postCreateCommand": "/usr/local/bin/setup-aliases.sh && echo 'Dev Container is ready!'",
     "remoteUser": "root"
 }
