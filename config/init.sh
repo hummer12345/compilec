@@ -11,6 +11,8 @@ cp ../main.cpp "${CONFIG_DIR}/cpp/"
 
 cp template.json "${CONFIG_DIR}/cpp/"
 
+cp config.json "${CONFIG_DIR}/"
+
 alias ojtest='oj t -c "./a.out" -d ./tests/'
 
 alias submit='acc submit main.cpp'
