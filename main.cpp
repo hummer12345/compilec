@@ -2,23 +2,27 @@
 using namespace std;
 const int MOD = 998244353;
 const long long INF = 1LL<<60;
+
+void cint(){}
+template <class Head,class... Tail>
+void cint(Head&& head,Tail&&... tail){
+    cin>>head;
+    cint(move(tail)...);
+}
 #define int long long
+#define icin(...) int __VA_ARGS__;cint(__VA_ARGS__)
+#define scin(...) string __VA_ARGS__;CINT(__VA_ARGS__)
+#define vcin(x) for(auto&youso_: (x) )cin>>youso_
 #define rep(i,n) for (int i = 0; i < (int)(n); i++)
 #define all(a) (a).begin(), (a).end()
+#define rall(x) x.rbegin(), x.rend()
 #define yes cout << "Yes" << endl;
 #define no cout << "No" << endl;
 #define co(x) cout<<(x);
 #define coel(x) cout<<(x)<<endl;
+#define scout(x) cout<<(x)<<" "
 #define pb(a) push_back(a);
-template<typename T>
-using Matrix = vector<vector<T>>;
-template<typename T>
-Matrix<T> mm(int rows, int cols, T value = T()) {
-    return Matrix<T>(rows, std::vector<T>(cols, value));
-}
-// 5行3列の整数型の多次元vectorを生成し、全ての要素を0で初期化
-//auto matrix = make_matrix<int>(5, 3, 0);
 
 signed main() {
-
+    int n;
 }
