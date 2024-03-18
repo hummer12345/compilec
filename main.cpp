@@ -35,6 +35,9 @@ vector<int> sieveOfEratosthenes(int n) { vector<bool> prime(n + 1, true); vector
 class UnionFind { private: vector<int> parent, size; public: UnionFind(int n) : parent(n), size(n, 1) { for (int i = 0; i < n; ++i) parent[i] = i; } int find(int x) { return parent[x] == x ? x : parent[x] = find(parent[x]); } void unite(int x, int y) { x = find(x); y = find(y); if (x != y) { if (size[x] < size[y]) swap(x, y); parent[y] = x; size[x] += size[y]; } } bool same(int x, int y) { return find(x) == find(y); } int getSize(int x) { return size[find(x)]; } };
 class TopologicalSort { private: vector<vector<int>> adj; vector<int> in_degree; priority_queue<int, vector<int>, greater<int>> pq; vector<int> order; public: TopologicalSort(int n) : adj(n), in_degree(n, 0) {} void addEdge(int u, int v) { adj[u].push_back(v); in_degree[v]++; } vector<int> sort() { for (int i = 0; i < in_degree.size(); i++) if (in_degree[i] == 0) pq.push(i); while (!pq.empty()) { int u = pq.top(); pq.pop(); order.push_back(u); for (int v : adj[u]) if (--in_degree[v] == 0) pq.push(v); } return order.size() == adj.size() ? order : vector<int>(); } };
 
+vector<int> v;
+vector<bool> vis;
+
 signed main() {
     
 }
